@@ -42,8 +42,8 @@ app.listen(config.port, config.host, () => {
     JSON.stringify(
       { ...app.locals.gVars, host: config.host, port: config.port },
       null,
-      2
-    )
+      2,
+    ),
   );
 
   console.info(`Running on ${config.host}:${config.port}...`);
